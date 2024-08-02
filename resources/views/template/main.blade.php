@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>@yield('title') | Andis Dev</title>
+    <title>@yield('title') | RSIA Puri Bunda</title>
 
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet"
@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="/assets/plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
     <!-- Theme style -->
     <link rel="stylesheet" href="/assets/dist/css/adminlte.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
 </head>
 
 <body class="hold-transition sidebar-mini">
@@ -178,7 +179,7 @@
             <a href="/dashboard" class="brand-link">
                 <img src="/assets/dist/img/AdminLTELogo.png" alt="AdminLTE Logo"
                     class="brand-image img-circle elevation-3" style="opacity: .8">
-                <span class="brand-text font-weight-light">Andis Dev</span>
+                <span class="brand-text font-weight-light">RSIA Puri Bunda</span>
             </a>
 
             <!-- Sidebar -->
@@ -220,11 +221,35 @@
                                 </p>
                             </a>
                         </li>
-                        <li class="nav-item">
+                        {{-- <li class="nav-item">
                             <a href="/barang" class="nav-link">
                                 <i class="nav-icon fa-solid fa-box"></i>
                                 <p>
                                     Barang
+                                </p>
+                            </a>
+                        </li> --}}
+                        <li class="nav-item">
+                            <a href="/karyawan" class="nav-link">
+                                <i class="nav-icon fa-solid fa-box"></i>
+                                <p>
+                                    Karyawan
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/units" class="nav-link">
+                                <i class="nav-icon fa-solid fa-box"></i>
+                                <p>
+                                    Unit
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/jabatans" class="nav-link">
+                                <i class="nav-icon fa-solid fa-box"></i>
+                                <p>
+                                    Jabatan
                                 </p>
                             </a>
                         </li>
@@ -277,6 +302,7 @@
 
     <!-- jQuery -->
     <script src="/assets/plugins/jquery/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <!-- Bootstrap 4 -->
     <script src="/assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- DataTables  & Plugins -->
