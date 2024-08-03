@@ -58,7 +58,7 @@ https://login-register-crud-laravel.andisdev.tech/
 
 ## License
 
-Andis Dev
+Ahmad Hardi
 
 **Free for learn !**
 

@@ -34,14 +34,16 @@ class JabatanController extends Controller
      */
     public function store(Request $request)
     {
+        // Validate the request
         $validated = $request->validate([
             'name' => 'required|max:100|unique:jabatans',
         ]);
 
+        // Create the new jabatan
         Jabatan::create($validated);
 
-        Alert::success('Success', 'Jabatan has been saved!');
-        return redirect('/jabatans'); // Ubah '/jabatans' menjadi '/Jabatan'
+        // Return success response
+        return response()->json(['success' => true, 'message' => 'Jabatan has been saved!']);
     }
     /**
      * Display the specified resource.

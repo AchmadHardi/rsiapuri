@@ -16,7 +16,7 @@ class KaryawanController extends Controller
      */
     public function index()
     {
-        $karyawans = Karyawan::with('unit', 'jabatan')->orderBy('nama', 'asc')->get();
+        $karyawans = Karyawan::with('unit', 'jabatan')->orderBy('id', 'desc')->get();
         return view('karyawan.karyawan', [
             'karyawans' => $karyawans
         ]);
@@ -121,7 +121,7 @@ class KaryawanController extends Controller
             $karyawan = Karyawan::findOrFail($id_karyawan);
             $karyawan->delete();
 
-            Alert::error('Success', 'Karyawan has been deleted!');
+            Alert::success('Success', 'Karyawan has been deleted!');
             return redirect('/karyawan');
         } catch (Exception $ex) {
             Alert::warning('Error', 'Cannot delete, Karyawan is in use!');

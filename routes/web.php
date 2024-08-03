@@ -35,3 +35,5 @@ Route::resource('/barang', BarangController::class)->middleware('auth');
 Route::resource('/karyawan', KaryawanController::class)->middleware('auth');
 Route::resource('/units', UnitController::class)->middleware('auth');
 Route::resource('/jabatans', JabatanController::class)->middleware('auth');
+Route::post('/units', [UnitController::class, 'store']);
+Route::post('/jabatans', [JabatanController::class, 'store']);

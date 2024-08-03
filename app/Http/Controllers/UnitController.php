@@ -34,14 +34,16 @@ class UnitController extends Controller
      */
     public function store(Request $request)
     {
+        // Validate the request
         $validated = $request->validate([
             'name' => 'required|max:100|unique:units',
         ]);
 
+        // Create the new unit
         Unit::create($validated);
 
-        Alert::success('Success', 'Unit has been saved!');
-        return redirect('/units'); // Ubah '/units' menjadi '/unit'
+        // Return success response
+        return response()->json(['success' => true, 'message' => 'Unit has been saved!']);
     }
     /**
      * Display the specified resource.
