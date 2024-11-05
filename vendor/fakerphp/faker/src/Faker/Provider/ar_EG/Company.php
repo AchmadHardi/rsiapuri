@@ -9,10 +9,10 @@ class Company extends \Faker\Provider\Company
     protected static $formats = [
         '{{companyPrefix}} {{cityName}}',
         '{{companyPrefix}} {{lastName}}',
-        '{{cityName}} {{companySuffix}}',
-        '{{lastName}} {{companySuffix}}',
-        '{{companyPrefix}} {{lastName}} {{companySuffix}}',
-        '{{companyPrefix}} {{cityName}} {{companySuffix}}',
+        '{{cityName}} {{companyuffix}}',
+        '{{lastName}} {{companyuffix}}',
+        '{{companyPrefix}} {{lastName}} {{companyuffix}}',
+        '{{companyPrefix}} {{cityName}} {{companyuffix}}',
     ];
 
     protected static $catchPhraseWords = [
@@ -25,7 +25,7 @@ class Company extends \Faker\Provider\Company
 
     protected static $companyPrefix = ['شركة', 'مؤسسة', 'مجموعة', 'مكتب', 'أكاديمية', 'معرض'];
 
-    protected static $companySuffix = [
+    protected static $companyuffix = [
         ' ش.م.م',
         ' للتجاره العامه',
         'للأجهزة الطبيه',

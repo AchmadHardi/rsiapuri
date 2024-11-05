@@ -7,8 +7,8 @@ class Company extends \Faker\Provider\Company
     protected static $formats = [
         '{{companyPrefix}} {{lastName}}',
         '{{companyPrefix}} {{lastName}} {{lastName}}',
-        '{{companyPrefix}} {{lastName}} {{companySuffix}}',
-        '{{companyPrefix}} {{lastName}} {{lastName}} {{companySuffix}}',
+        '{{companyPrefix}} {{lastName}} {{companyuffix}}',
+        '{{companyPrefix}} {{lastName}} {{lastName}} {{companyuffix}}',
     ];
 
     /**
@@ -40,7 +40,7 @@ class Company extends \Faker\Provider\Company
     /**
      * @see http://id.wikipedia.org/wiki/Jenis_badan_usaha
      */
-    protected static $companySuffix = ['(Persero) Tbk', 'Tbk'];
+    protected static $companyuffix = ['(Persero) Tbk', 'Tbk'];
 
     /**
      * Get company prefix
@@ -57,8 +57,8 @@ class Company extends \Faker\Provider\Company
      *
      * @return string company suffix
      */
-    public static function companySuffix()
+    public static function companyuffix()
     {
-        return static::randomElement(static::$companySuffix);
+        return static::randomElement(static::$companyuffix);
     }
 }

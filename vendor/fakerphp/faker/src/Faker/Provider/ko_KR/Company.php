@@ -6,16 +6,16 @@ class Company extends \Faker\Provider\Company
 {
     protected static $formats = [
         '{{companyPrefix}}{{firstName}}',
-        '{{companyPrefix}}{{firstName}}{{companySuffix}}',
-        '{{firstName}}{{companySuffix}}',
-        '{{firstName}}{{companySuffix}}',
-        '{{firstName}}{{companySuffix}}',
-        '{{firstName}}{{companySuffix}}',
+        '{{companyPrefix}}{{firstName}}{{companyuffix}}',
+        '{{firstName}}{{companyuffix}}',
+        '{{firstName}}{{companyuffix}}',
+        '{{firstName}}{{companyuffix}}',
+        '{{firstName}}{{companyuffix}}',
     ];
 
     protected static $companyPrefix = ['(주)', '(주)', '(주)', '(유)'];
 
-    protected static $companySuffix = [
+    protected static $companyuffix = [
         '전자', '건설', '식품', '인터넷', '그룹', '은행', '보험', '제약', '금융', '네트웍스', '기획', '미디어', '연구소', '모바일', '스튜디오', '캐피탈',
     ];
 
@@ -24,8 +24,8 @@ class Company extends \Faker\Provider\Company
         return static::randomElement(static::$companyPrefix);
     }
 
-    public static function companySuffix()
+    public static function companyuffix()
     {
-        return static::randomElement(static::$companySuffix);
+        return static::randomElement(static::$companyuffix);
     }
 }

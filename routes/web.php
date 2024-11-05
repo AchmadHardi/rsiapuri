@@ -3,10 +3,12 @@
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\BarangController;
-use App\Http\Controllers\KaryawanController;
-use App\Http\Controllers\UnitController;
+use App\Http\Controllers\CoaController;
+use App\Http\Controllers\CompanyController;
 use App\Http\Controllers\JabatanController;
-use App\Http\Controllers\LoginController;
+use App\Http\Controllers\JurnalController;
+use App\Http\Controllers\TransaksiController;
+use App\Http\Controllers\TriangleController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -32,8 +34,9 @@ Route::get('/', [DashboardController::class, 'index'])->middleware('auth');
 
 //route barang
 Route::resource('/barang', BarangController::class)->middleware('auth');
-Route::resource('/karyawan', KaryawanController::class)->middleware('auth');
-Route::resource('/units', UnitController::class)->middleware('auth');
-Route::resource('/jabatans', JabatanController::class)->middleware('auth');
-Route::post('/units', [UnitController::class, 'store']);
 Route::post('/jabatans', [JabatanController::class, 'store']);
+Route::resource('/company', CompanyController::class)->middleware('auth');
+Route::resource('/jurnal', JurnalController::class)->middleware('auth');
+Route::resource('/transaksi', TransaksiController::class)->middleware('auth');
+Route::resource('/coa', CoaController::class)->middleware('auth');
+Route::get('/triangle/{x}', [TriangleController::class, 'show']);

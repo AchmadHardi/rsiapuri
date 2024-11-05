@@ -5,18 +5,18 @@ namespace Faker\Provider\ms_MY;
 class Company extends \Faker\Provider\Company
 {
     protected static $formats = [
-        '{{companyName}} {{companySuffix}}',
-        '{{industry}} {{lastNameMalay}} {{companySuffix}}',
-        '{{industry}} {{firstNameMaleChinese}} {{companySuffix}}',
-        '{{industry}} {{firstNameMaleIndian}} {{companySuffix}}',
+        '{{companyName}} {{companyuffix}}',
+        '{{industry}} {{lastNameMalay}} {{companyuffix}}',
+        '{{industry}} {{firstNameMaleChinese}} {{companyuffix}}',
+        '{{industry}} {{firstNameMaleIndian}} {{companyuffix}}',
     ];
 
     /**
-     * There are more Private Limited Companies(Sdn Bhd) than Public Listed Companies(Berhad)
+     * There are more Private Limited company(Sdn Bhd) than Public Listed company(Berhad)
      *
      * @see http://www.risscorporateservices.com/types-of-business-entities.html
      */
-    protected static $companySuffix = [
+    protected static $companyuffix = [
         'Berhad',
         'Bhd',
         'Bhd.',
@@ -26,9 +26,9 @@ class Company extends \Faker\Provider\Company
     ];
 
     /**
-     * @see https://en.wikipedia.org/wiki/List_of_companies_of_Malaysia
+     * @see https://en.wikipedia.org/wiki/List_of_company_of_Malaysia
      */
-    protected static $companies = [
+    protected static $company = [
         'Adventa', 'AirAsia', 'AmBank', 'Astro Malaysia Holdings', 'Astro Radio', 'Axiata',
         'Berjaya Group', 'Bonia', 'Boustead Holdings', 'BSA Manufacturing', 'Bufori', 'Bumiputra-Commerce Holdings', 'Bursa Malaysia',
         'Capital Dynamics', 'Celcom', 'CIMB',
@@ -90,7 +90,7 @@ class Company extends \Faker\Provider\Company
      */
     public static function companyName()
     {
-        return static::randomElement(static::$companies);
+        return static::randomElement(static::$company);
     }
 
     /**
