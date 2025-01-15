@@ -5,14 +5,14 @@ namespace Faker\Provider\nb_NO;
 class Company extends \Faker\Provider\Company
 {
     protected static $formats = [
-        '{{lastName}} {{companySuffix}}',
-        '{{lastName}} {{companySuffix}}',
-        '{{lastName}} {{companySuffix}}',
-        '{{firstName}} {{lastName}} {{companySuffix}}',
-        '{{lastName}} & {{lastName}} {{companySuffix}}',
+        '{{lastName}} {{companyuffix}}',
+        '{{lastName}} {{companyuffix}}',
+        '{{lastName}} {{companyuffix}}',
+        '{{firstName}} {{lastName}} {{companyuffix}}',
+        '{{lastName}} & {{lastName}} {{companyuffix}}',
         '{{lastName}} & {{lastName}}',
         '{{lastName}} og {{lastName}}',
-        '{{lastName}} og {{lastName}} {{companySuffix}}',
+        '{{lastName}} og {{lastName}} {{companyuffix}}',
     ];
 
     /**
@@ -20,7 +20,7 @@ class Company extends \Faker\Provider\Company
      *
      * @see https://www.brreg.no/bedrift/organisasjonsformer/
      */
-    protected static $companySuffix = ['ANS', 'AS', 'ASA', 'BA', 'DA', 'ENK', 'GFS', 'KTRF', 'NUF', 'PK', 'SA', 'SPA', 'STI', 'VIFE'];
+    protected static $companyuffix = ['ANS', 'AS', 'ASA', 'BA', 'DA', 'ENK', 'GFS', 'KTRF', 'NUF', 'PK', 'SA', 'SPA', 'STI', 'VIFE'];
 
     /**
      * 1500 random job titles from Statistisk Sentralbyrå

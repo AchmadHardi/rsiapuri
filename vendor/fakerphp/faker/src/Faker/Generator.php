@@ -169,9 +169,9 @@ use Faker\Container\ContainerInterface;
  *
  * @method string company()
  *
- * @property string $companySuffix
+ * @property string $companyuffix
  *
- * @method string companySuffix()
+ * @method string companyuffix()
  *
  * @property string $jobTitle
  *

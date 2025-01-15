@@ -5,7 +5,7 @@ namespace Faker\Provider\es_PE;
 class Company extends \Faker\Provider\Company
 {
     protected static $formats = [
-        '{{lastName}} {{companySuffix}}',
+        '{{lastName}} {{companyuffix}}',
         '{{lastName}}-{{lastName}}',
         '{{lastName}} y {{lastName}}',
         '{{lastName}} de {{lastName}}',
@@ -36,7 +36,7 @@ class Company extends \Faker\Provider\Company
         ],
     ];
 
-    protected static $companySuffix = ['e Hijo', 'e Hija', 'e Hijos', 'y Asoc.', 'y Flia.', 'SRL', 'SA', 'S. de H.'];
+    protected static $companyuffix = ['e Hijo', 'e Hija', 'e Hijos', 'y Asoc.', 'y Flia.', 'SRL', 'SA', 'S. de H.'];
 
     /**
      * @example 'Robust full-range hub'

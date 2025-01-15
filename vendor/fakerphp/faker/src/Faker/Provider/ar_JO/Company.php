@@ -5,8 +5,8 @@ namespace Faker\Provider\ar_JO;
 class Company extends \Faker\Provider\Company
 {
     protected static $formats = [
-        '{{lastName}} {{companySuffix}}',
-        '{{companyPrefix}} {{lastName}} {{companySuffix}}',
+        '{{lastName}} {{companyuffix}}',
+        '{{companyPrefix}} {{lastName}} {{companyuffix}}',
         '{{companyPrefix}} {{lastName}}',
     ];
 
@@ -24,7 +24,7 @@ class Company extends \Faker\Provider\Company
 
     protected static $companyPrefix = ['شركة', 'مؤسسة', 'مجموعة', 'مكتب', 'أكاديمية', 'معرض'];
 
-    protected static $companySuffix = ['وأولاده', 'للمساهمة المحدودة', ' ذ.م.م', 'مساهمة عامة', 'وشركائه'];
+    protected static $companyuffix = ['وأولاده', 'للمساهمة المحدودة', ' ذ.م.م', 'مساهمة عامة', 'وشركائه'];
 
     /**
      * @example 'مؤسسة'

@@ -81,9 +81,9 @@ class Payment extends \Faker\Provider\Payment
     ];
 
     /**
-     * @see https://en.wikipedia.org/wiki/List_of_banks_in_Malaysia#Investment-Link_Funds_(Insurance_Companies_-_Takaful_included)
+     * @see https://en.wikipedia.org/wiki/List_of_banks_in_Malaysia#Investment-Link_Funds_(Insurance_company_-_Takaful_included)
      */
-    protected static $insuranceCompanies = [
+    protected static $insurancecompany = [
         'AIA Malaysia',
         'AIG Malaysia',
         'Allianz Malaysia',
@@ -215,7 +215,7 @@ class Payment extends \Faker\Provider\Payment
      */
     public static function insurance()
     {
-        return static::randomElement(static::$insuranceCompanies);
+        return static::randomElement(static::$insurancecompany);
     }
 
     /**

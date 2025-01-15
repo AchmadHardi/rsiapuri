@@ -4,7 +4,7 @@ namespace Faker\Provider\el_GR;
 
 class Company extends \Faker\Provider\Company
 {
-    protected static $companySuffix = [
+    protected static $companyuffix = [
         'Ο.Ε',
         'Ε.Ε',
         'Α.Ε',
@@ -12,7 +12,7 @@ class Company extends \Faker\Provider\Company
     ];
 
     protected static $companyFormats = [
-        '{{lastName}} {{firstName}} {{companySuffix}}',
+        '{{lastName}} {{firstName}} {{companyuffix}}',
         '{{lastName}}-{{firstName}}',
     ];
 

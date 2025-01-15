@@ -7,17 +7,17 @@ class Company extends \Faker\Provider\Company
     protected static $formats = [
         '{{companyName}}',                                      // Вектор
         '{{companyPrefix}} "{{companyName}}"',                  // ТОВ "Інфоком"
-        '{{companyName}}-{{companySuffix}}',                    // Сервіс-Плюс
-        '{{companyPrefix}} "{{companyName}}-{{companySuffix}}"', // ПАТ "Альфа-Стиль"
+        '{{companyName}}-{{companyuffix}}',                    // Сервіс-Плюс
+        '{{companyPrefix}} "{{companyName}}-{{companyuffix}}"', // ПАТ "Альфа-Стиль"
     ];
 
     protected static $urlFormats = [
         '{{companyName}}',
-        '{{companyName}}-{{companySuffix}}',
+        '{{companyName}}-{{companyuffix}}',
     ];
 
     protected static $companyPrefix = ['ТОВ', 'ПП', 'ПАТ', 'ПрАТ'];
-    protected static $companySuffix = ['Сервіс', 'Плюс', 'Груп', 'Стиль', 'Дизайн'];
+    protected static $companyuffix = ['Сервіс', 'Плюс', 'Груп', 'Стиль', 'Дизайн'];
 
     protected static $companyName = [
         'Вектор', 'Едельвейс', 'Смарт', 'Альфа', 'Система', 'Універсал',

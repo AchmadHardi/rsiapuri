@@ -7,15 +7,15 @@ class Company extends \Faker\Provider\Company
     protected static $formats = [
         '{{lastName}}',
         '{{lastName}}',
-        '{{lastName}} {{companySuffix}}',
-        '{{lastName}} {{companySuffix}}',
-        '{{lastName}} {{companySuffix}}',
-        '{{lastName}} {{companySuffix}}',
+        '{{lastName}} {{companyuffix}}',
+        '{{lastName}} {{companyuffix}}',
+        '{{lastName}} {{companyuffix}}',
+        '{{lastName}} {{companyuffix}}',
         '{{companyPrefix}} {{lastName}}',
         '{{lastName}}-{{lastName}}',
     ];
 
-    protected static $companySuffix = ['S.A.', 'i syn', 'sp. z o.o.', 'sp. j.', 'sp. p.', 'sp. k.', 'S.K.A', 's. c.', 'P.P.O.F'];
+    protected static $companyuffix = ['S.A.', 'i syn', 'sp. z o.o.', 'sp. j.', 'sp. p.', 'sp. k.', 'S.K.A', 's. c.', 'P.P.O.F'];
 
     protected static $companyPrefix = ['Grupa', 'Fundacja', 'Stowarzyszenie', 'Spółdzielnia'];
 

@@ -5,7 +5,7 @@ namespace Faker\Provider\fi_FI;
 class Company extends \Faker\Provider\Company
 {
     protected static $formats = [
-        '{{lastName}} {{companySuffix}}',
+        '{{lastName}} {{companyuffix}}',
         '{{lastName}}-{{lastName}}',
         '{{lastName}}, {{lastName}} and {{lastName}}',
     ];
@@ -34,7 +34,7 @@ class Company extends \Faker\Provider\Company
         ],
     ];
 
-    protected static $companySuffix = ['OY', 'AB', 'OY AB', 'RY', 'OYj', 'Tmi.', 'Inc.', 'Ltd'];
+    protected static $companyuffix = ['OY', 'AB', 'OY AB', 'RY', 'OYj', 'Tmi.', 'Inc.', 'Ltd'];
 
     /**
      * @example 'Ainoa 3.sukupolven ohjelmisto'
